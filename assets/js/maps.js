@@ -1,5 +1,4 @@
 function initMap() {
-    // The location of Uluru
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 3,
         center: {
@@ -8,7 +7,6 @@ function initMap() {
         }
     });
 
-    // The marker, positioned at Uluru
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     // Add some markers to the map.

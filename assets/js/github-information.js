@@ -30,7 +30,7 @@ function repoInformation(repos) {
 
     return `<div class="clearfix repo-list"
                 <p>
-                    <strong>Reop List:</strong>
+                    <strong>Repo List:</strong>
                 </p>
                 <ul>
                     ${listItemsHTML.join("\n")}
@@ -39,6 +39,9 @@ function repoInformation(repos) {
 }
 
 function fetchGitHubInformation(event) {
+    $("#gh-user-data").html("");
+    $("#gh-repo-data").html("");
+
     
     var username = $("#gh-username").val();
     // if username is empty, display error message
@@ -76,3 +79,5 @@ function fetchGitHubInformation(event) {
             }
         });
 }
+
+$(document).ready(fetchGitHubInformation);
